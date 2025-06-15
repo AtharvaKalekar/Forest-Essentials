@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Forest Essentials India - Luxury Ayurveda Beauty Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/exclusives.css">
+  <link rel="stylesheet" href="css/cart-styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>FREE BESTSELLER ON 1ST ORDER*. CODE:WELCOME</p>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="overlay" id="mobileMenuOverlay"></div>
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <h3>Menu</h3>
+      <button class="mobile-menu-close" id="mobileMenuClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="pages/facial-care.html">Face</a></li>
+      <li><a href="pages/bath-body.html">Bath & Body</a></li>
+      <li><a href="pages/hair.html">Hair</a></li>
+      <li><a href="pages/makeup.html">Makeup</a></li>
+      <li><a href="pages/fragrance.html">Fragrance</a></li>
+      <li><a href="pages/men.html">Men</a></li>
+      <li><a href="pages/mom-baby.html">Mom & Baby</a></li>
+      <li><a href="pages/wellness.html">Wellness</a></li>
+      <li><a href="pages/gifting.html">Gifting</a></li>
+      <li><a href="pages/travel-kits.html">Travel Kits</a></li>
+      <li><a href="pages/exclusives.html">Exclusives</a></li>
+    </ul>
+  </nav>
+
+  <!-- Navigation -->
+  <header>
+    <!-- Top Navigation -->
+    <div class="navbar-top">
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navbar-left">
+        <a href="#" class="navbar-link search-icon"><i class="fas fa-search"></i></a>
+        <a href="pages/stores.html" class="navbar-link">Stores</a>
+        <select class="currency-dropdown">
+          <option value="INR">₹ INR</option>
+          <option value="USD">$ USD</option>
+          <option value="GBP">£ GBP</option>
+        </select>
+      </div>
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="Forest Essentials Logo">
+        </a>
+      </div>
+      <div class="navbar-right">
+        <a href="pages/account.html" class="navbar-link">Account</a>
+        <a href="pages/soundarya-club.html" class="navbar-link">Soundarya Club</a>
+        <a href="pages/cart.html" class="cart-icon header-cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <nav class="navbar-bottom">
+      <a href="pages/facial-care.html" class="navbar-link">Face</a>
+      <a href="pages/bath-body.html" class="navbar-link">Bath & Body</a>
+      <a href="pages/hair.html" class="navbar-link">Hair</a>
+      <a href="pages/makeup.html" class="navbar-link">Makeup</a>
+      <a href="pages/gifting.html" class="navbar-link new">Gifting</a>
+      <a href="pages/travel-kits.html" class="navbar-link">Travel Minis</a>
+      <a href="pages/mom-baby.html" class="navbar-link">Mom & Baby</a>
+      <a href="pages/men.html" class="navbar-link">Men</a>
+      <a href="pages/wellness.html" class="navbar-link">Wellness</a>
+      <a href="pages/fragrance.html" class="navbar-link">Fragrance</a>
+      <a href="pages/about.html" class="navbar-link">About Us</a>
+      <a href="pages/exclusives.html" class="navbar-link">Exclusives!</a>
+    </nav>
+  </header>
+
+  <!-- Hero Slider Section -->
+  <section class="hero-slider">
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slide active">
+          <img src="images/fathers_day_combo_offers_homepage_desktop_banner.avif" alt="Forest Essentials Product">
+          <div class="slide-content">
+            <h2>NEW LAUNCH</h2>
+            <h1></h1>
+            <p>Experience the enchanting essence of Mogra</p>
+            <a href="pages/men.html" class="shop-now-btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/travel_minis_desktop_banner_hp1.avif" alt="Forest Essentials Product">
+          <div class="slide-content">
+            <h2></h2>
+            <h1></h1>
+            <p></p>
+            <a href="pages/product.html" class="shop-now-btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/mogra__hp_banner_1_desktop.avif" alt="Forest Essentials Product">
+          <div class="slide-content">
+            <h2>NEW ARRIVAL</h2>
+            <h1>Varuna & Samsara</h1>
+            <p>Discover our revolutionary face serums</p>
+            <a href="pages/product.html" class="shop-now-btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/sun_spray_desktop_hp_banner_1.avif" alt="Forest Essentials Product">
+          <div class="slide-content">
+            
+            <a href="pages/product.html" class="shop-now-btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/haircare_desktop_2880x840.avif" alt="Forest Essentials Product">
+          <div class="slide-content">
+            
+            <a href="pages/product.html" class="shop-now-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slider Navigation -->
+      <button class="slider-nav prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="slider-nav next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      
+      <!-- Slider Dots -->
+      <div class="slider-dots">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+        <button class="dot" data-slide="3"></button>
+        <button class="dot" data-slide="3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Grid -->
+  <section class="category-section">
+    <div class="category-row">
+      <a href="./pages/facial-care.html " class="category-card">
+        <img src="./images/categoryimages/Face-Care.avif" alt="Face">
+        <div class="category-name">Face</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="pages/bath-body.html" class="category-card">
+        <img src="./images/categoryimages/Body-Care.avif" alt="Body">
+        <div class="category-name">Body</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="pages/makeup.html" class="category-card">
+        <img src="./images/categoryimages/Travel-Minis.avif" alt="Makeup">
+        <div class="category-name">Makeup</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="pages/hair.html" class="category-card">
+        <img src="./images/categoryimages/Hair-Care.avif" alt="Hair">
+        <div class="category-name">Hair</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="pages/men.html" class="category-card">
+        <img src="./images/categoryimages/Men.avif" alt="Men">
+        <div class="category-name">Men</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="pages/wellness.html" class="category-card">
+        <img src="./images/categoryimages/Wellness.avif" alt="Wellness">
+        <div class="category-name">Wellness</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="pages/mom-baby.html" class="category-card">
+        <img src="./images/categoryimages/Mother-Child.avif" alt="Mom & Baby">
+        <div class="category-name">Mom & Baby</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="pages/fragrance.html" class="category-card">
+        <img src="./images/categoryimages/Fragrance.avif" alt="Fragrances">
+        <div class="category-name">Fragrances</div>
+        <div class="category-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Seasonal Indulgences Section -->
+  <section class="seasonal-indulgences-section">
+    <div class="seasonal-header">
+      <h2>SEASONAL INDULGENCES</h2>
+      <a href="pages/exclusives.html" class="view-all-link">VIEW ALL →</a>
+    </div>
+    <div class="seasonal-indulgences-grid">
+      <!-- Product 1 -->
+      <div class="seasonal-item-card product-card" 
+           data-product-id="1" 
+           data-product-name="Advanced Hair Growth Serum" 
+           data-product-price="3150"
+           data-product-image="./images/seasonalimages/advanced_hair_growth_serum.avif"
+           data-product-url="./pages/product.html?id=1">
+        <div class="seasonal-item-image-container">
+          <span class="seasonal-item-badge trending-now">Trending Now</span>
+          <button class="add-to-cart" title="Add to Cart">
+            <i class="fas fa-shopping-bag"></i> Add to Cart
+          </button>
+          <img src="./images/seasonalimages/8841_advanced_soundarya_age_defying_facial_serum_with_24k_gold_1.avif" alt="Advanced Hair Growth Serum">
+          <div class="seasonal-item-wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="seasonal-item-name">Advanced Hair Growth Serum</h3>
+        <p class="seasonal-item-description">Root treatment to Reactivate Hair Growth</p>
+        <div class="seasonal-item-variants">50 ml</div>
+        <div class="seasonal-item-price">₹3,150.00</div>
+        <div class="seasonal-item-rating">
+          <span class="stars">★★★★☆</span>
+          <span>116 Reviews</span>
+        </div>
+        <div class="seasonal-item-actions">
+          <button class="seasonal-item-button" onclick="addToCart(this)">Add to Bag</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="seasonal-item-card">
+        <div class="seasonal-item-image-container">
+          <img src="./images/seasonalimages/iconic_minis_discovery_set_1n.avif" alt="Essentials For Him">
+          <div class="seasonal-item-wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="seasonal-item-name">Essentials For Him</h3>
+        <p class="seasonal-item-description">Miniature Grooming Essentials</p>
+        <div class="seasonal-item-price">₹2,220.00</div>
+        <div class="seasonal-item-rating">
+          <span class="stars">★★★★★</span>
+          <span>22 Reviews</span>
+        </div>
+        <div class="seasonal-item-actions">
+          <button class="seasonal-item-button">Add to Bag</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="seasonal-item-card">
+        <div class="seasonal-item-image-container">
+          <span class="seasonal-item-badge best-seller">Best Seller</span>
+          <img src="./images/seasonalimages/21762_high_performance_day___night_face_serums_1.avif" alt="Transformative Soundarya Night Cream">
+          <div class="seasonal-item-wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="seasonal-item-name">Transformative Soundarya Night Cream</h3>
+        <p class="seasonal-item-description">Serum-soaked Age-defying Night Formula</p>
+        <div class="seasonal-item-variants">2 Sizes Available</div>
+        <div class="seasonal-item-price">₹8,695.00</div>
+        <div class="seasonal-item-rating">
+          <span class="stars">★★★★☆</span>
+          <span>223 Reviews</span>
+        </div>
+        <div class="seasonal-item-actions">
+          <button class="seasonal-item-button">Select Size</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="seasonal-item-card product-card"
+           data-product-id="2" 
+           data-product-name="Soundarya Day Cream 24K Gold" 
+           data-product-price="2475"
+           data-product-image="./images/seasonalimages/8842_soundarya_radiance_cream_with_24k_gold___spf_30_pa__9.avif"
+           data-product-url="./pages/product.html?id=2">
+        <div class="seasonal-item-image-container">
+          <span class="seasonal-item-badge best-seller">Best Seller</span>
+          <img src="./images/seasonalimages/8842_soundarya_radiance_cream_with_24k_gold___spf_30_pa__9.avif" alt="Soundarya Day Cream 24K Gold">
+          <button class="add-to-cart" title="Add to Cart">
+            <i class="fas fa-shopping-bag"></i> Add to Cart
+          </button>
+          <div class="seasonal-item-wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="seasonal-item-name">Soundarya Day Cream 24K Gold, SPF 30|PA++</h3>
+        <p class="seasonal-item-description">Age-defying & Illuminating</p>
+        <div class="seasonal-item-variants">2 Sizes Available</div>
+        <div class="seasonal-item-price">₹6,850.00</div>
+        <div class="seasonal-item-rating">
+          <span class="stars">★★★★☆</span>
+          <span>451 Reviews</span>
+        </div>
+        <div class="seasonal-item-actions">
+          <button class="seasonal-item-button">Select Size</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="seasonal-item-card">
+        <div class="seasonal-item-image-container">
+          <img src="./images/seasonalimages/8845_sheer_sun_fluid_spf_50_pa__50ml_1.avif" alt="Delicate Facial Cleanser Kashmiri Saffron">
+          <div class="seasonal-item-wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="seasonal-item-name">Delicate Facial Cleanser Kashmiri Saffron & Neem</h3>
+        <p class="seasonal-item-description">Gentle Cleansing for All Skin Types</p>
+        <div class="seasonal-item-variants">2 Sizes Available</div>
+        <div class="seasonal-item-price">₹1,375.00</div>
+        <div class="seasonal-item-rating">
+          <span class="stars">★★★★★</span>
+          <span>187 Reviews</span>
+        </div>
+        <div class="seasonal-item-actions">
+          <button class="seasonal-item-button">Select Size</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Varuna & Samsara Section -->
+  <section class="feature-section">
+    <div class="section-header">
+      <h2>DISCOVER OUR NEW LAUNCH: VARUNA & SAMSARA</h2>
+    </div>
+    <div class="container">
+      <div class="content">
+        <h2>Youthful & Luminous Glow Within 7 Days</h2>
+        <p>A revolutionary age-defying face serum duo that gives results in 7 days comparable to conventional skin fillers.</p>
+        <p><strong>Step 1</strong> of this synergistic 2-step ritual is the Varuna Exceptional Repair Night Serum which delivers gentle nano actives deep into the skin, improving firmness & elasticity.</p>
+        <p><strong>Step 2</strong> is the Samsara Miraculous Glow Booster Day Serum that plumps & lifts the skin while adding a luminous glow.</p>
+        <ul>
+          <li><span>97%</span> experienced an enhanced glow in just 30 minutes.</li>
+          <li><span>100%</span> enjoyed smoother & intensely moisturised skin within 24 hours.</li>
+          <li><span>97%</span> reported a marked enhancement in skin firmness in just 7 days.</li>
+        </ul>
+        <a href="pages/facial-care.html" class="btn-shop">Shop Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="video-wrapper">
+        <video controls poster="images/varuna-samsara-poster.jpg">
+          <source src="videos/SSYouTube.online_Natural Makeup Collection by Forest Essentials_1080p.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Concern Section -->
+  <section class="concern-section">
+    <h2 class="concern-section-title">SHOP BY CONCERN</h2>
+    <div class="concern-grid">
+      <a href="pages/facial-care.html" class="concern-card">
+        <div class="concern-image-container">
+          <img src="./images/conernimages/Anti-Aging.avif" alt="Anti-Ageing" class="concern-image">
+          <div class="concern-arrow">→</div>
+        </div>
+        <div class="concern-name">ANTI-AGEING</div>
+      </a>
+      <a href="pages/facial-care.html" class="concern-card">
+        <div class="concern-image-container">
+          <img src="./images/conernimages/Hair-Thinning-Loss.avif" alt="Hair Thinning/Loss" class="concern-image">
+          <div class="concern-arrow">→</div>
+        </div>
+        <div class="concern-name">HAIR THINNING/LOSS</div>
+      </a>
+      <a href="pages/facial-care.html" class="concern-card">
+        <div class="concern-image-container">
+          <img src="./images/conernimages/Dull-Dry-Skin.avif" alt="Dandruff" class="concern-image">
+          <div class="concern-arrow">→</div>
+        </div>
+        <div class="concern-name">DULL DRY SKIN</div>
+      </a>
+      <a href="pages/facial-care.html" class="concern-card">
+        <div class="concern-image-container">
+          <img src="./images/conernimages/Sun-Protection.avif" alt="Stretchmarks" class="concern-image">
+          <div class="concern-arrow">→</div>
+        </div>
+        <div class="concern-name">SUN PROTECTION</div>
+      </a>
+      <a href="pages/facial-care.html" class="concern-card">
+        <div class="concern-image-container">
+          <img src="./images/conernimages/Acne-Prone-Skin (1).avif" alt="Acne-Prone Skin" class="concern-image">
+          <div class="concern-arrow">→</div>
+        </div>
+        <div class="concern-name">ACNE-PRONE SKIN</div>
+      </a>
+      <a href="pages/facial-care.html" class="concern-card">
+        <div class="concern-image-container">
+          <img src="./images/conernimages/Dark-Circles.avif" alt="Fine Lines & Dark Circles" class="concern-image">
+          <div class="concern-arrow">→</div>
+        </div>
+        <div class="concern-name">DARK CIRCLES</div>
+      </a>
+    </div>
+  </section>
+
+  
+  <!-- Iconic Bestsellers Section -->
+  <section class="bestsellers-section">
+    <div class="section-header">
+      <h2>ICONIC BESTSELLERS</h2>
+      <a href="pages/exclusives.html" class="view-all-link">VIEW ALL →</a>
+    </div>
+    <div class="bestsellers-grid">
+      <!-- Product 1 -->
+      <div class="product-card" data-product-id="2" data-product-name="Soundarya Day Cream 24K Gold" data-product-price="2475">
+        <div class="product-badge trending">Trending Now</div>
+        <div class="product-image">
+          <img src="./images/iconicbestimages/Soundarya_Night_Cream_600x600.avif" alt="Soundarya Day Cream 24K Gold & SPF 25">
+          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+        </div>
+        <h3 class="product-name">Soundarya Day Cream 24K Gold, SPF 30|PA++</h3>
+        <p class="product-description">Age-Defying & Illuminating</p>
+        <div class="product-variants">2 Sizes Available</div>
+        <div class="product-price">₹2,475.00</div>
+        <div class="product-rating">
+          <span class="stars">★★★★☆</span>
+          <span class="review-count">251 Reviews</span>
+        </div>
+        <button class="product-button" onclick="addToCart(this)">Select Size</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-product-id="3" data-product-name="After Bath Oil Indian Rose Absolute" data-product-price="1850">
+        <div class="product-image">
+          <img src="./images/iconicbestimages/After_Bath_Oil.avif" alt="After Bath Oil Indian Rose Absolute">
+          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+        </div>
+        <h3 class="product-name">After Bath Oil Indian Rose Absolute</h3>
+        <p class="product-description">Scented Moisture Sealer</p>
+        <div class="product-variants">2 Sizes Available</div>
+        <div class="product-price">₹1,850.00</div>
+        <div class="product-rating">
+          <span class="stars">★★★★★</span>
+          <span class="review-count">48 Reviews</span>
+        </div>
+        <button class="product-button" onclick="addToCart(this)">Select Size</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" data-product-id="4" data-product-name="Rasa Activating Serum" data-product-price="3950">
+        <div class="product-image">
+          <img src="./images/iconicbestimages/Perfume_Kesar_600x600.avif" alt="Rasa Activating Serum">
+          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+        </div>
+        <h3 class="product-name">Rasa Activating Serum</h3>
+        <p class="product-description">Morning Hydration Surge</p>
+        <div class="product-variants">30 ml</div>
+        <div class="product-price">₹3,950.00</div>
+        <div class="product-rating">
+          <span class="stars">★★★★☆</span>
+          <span class="review-count">97 Reviews</span>
+        </div>
+        <button class="product-button" onclick="addToCart(this)">Add to Bag</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" data-product-id="5" data-product-name="After Shave Spray Sandalwood & Orange" data-product-price="1995">
+        <div class="product-image">
+          <img src="./images/iconicbestimages/Hair_Masque_600x600.avif" alt="After Shave Spray Sandalwood & Orange">
+          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+        </div>
+        <h3 class="product-name">After Shave Spray Sandalwood & Orange</h3>
+        <p class="product-description">Purifying & Refreshing</p>
+        <div class="product-variants">100 ml</div>
+        <div class="product-price">₹1,995.00</div>
+        <div class="product-rating">
+          <span class="stars">★★★★☆</span>
+          <span class="review-count">68 Reviews</span>
+        </div>
+        <button class="product-button" onclick="addToCart(this)">Add to Bag</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Just In Section -->
+  <section class="just-in-section">
+    <div class="section-header">
+      <h2>JUST IN</h2>
+      <a href="pages/exclusives.html" class="view-all-link">VIEW ALL →</a>
+    </div>
+    <p class="section-subtitle">Explore our latest launches</p>
+    <div class="just-in-grid">
+      <div class="just-in-card">
+        <img src="./images/JUSTINimages/Samsara-Varuna-just-in.avif" alt="Samsara & Varuna Face Serums">
+        <h3>Samsara & Varuna Face Serums</h3>
+        <p>A Revolutionary 2-step high performance ritual</p>
+        <a href="pages/facial-care.html" class="just-in-button">Shop Now</a>
+      </div>
+      <div class="just-in-card">
+        <img src="./images/JUSTINimages/Gotukula_Image.avif" alt="Balancing Night Cream Gotu Kola & Neem">
+        <h3>Balancing Night Cream Gotu Kola & Neem</h3>
+        <p>Neutralises Oil, Hydrates & Balances. Hydrates your skin.</p>
+        <a href="pages/facial-care.html" class="just-in-button">Shop Now</a>
+      </div>
+      <div class="just-in-card">
+        <img src="./images/JUSTINimages/keshanta-advanced-hair-growth-serum.avif" alt="Keshanta Hair Growth Serum">
+        <h3>Keshanta Effective Hair Growth Serums</h3>
+        <p>Root Treatment for fast Hair Growth</p>
+        <a href="pages/hair.html" class="just-in-button">Shop Now</a>
+      </div>
+      <div class="just-in-card">
+        <img src="./images/JUSTINimages/Mogra_Body_Mist_600x802.avif" alt="Body Mist Mogra">
+        <h3>Body Mist Mogra- offers permium fragrance</h3>
+        <p>Refresh, Hydrates & delicately Scents</p>
+        <a href="pages/fragrance.html" class="just-in-button">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beauty Routine Section -->
+  <section class="beauty-routine-section">
+    <div class="beauty-routine-content">
+      
+      <h2>TAILORED BEAUTY ROUTINE</h2>
+      <a href="pages/beauty-quiz.html" class="quiz-button">Take the Quiz</a>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section class="collections-section">
+    <div class="collections-grid">
+      <div class="collection-card">
+        <div class="collection-image">
+          <img src="./images/awardsimages/Soundarya.avif" alt="Soundarya Collection">
+        </div>
+        <div class="collection-content">
+          <h3>EXPERIENCE ICONIC RADIANCE</h3>
+          <h2>SOUNDARYA COLLECTION</h2>
+          <a href="pages/product.html" class="collection-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="collection-card">
+        <div class="collection-image">
+          <img src="images/awardsimages/Bhringraj-collection.avif" alt="Bhringraj Collection">
+        </div>
+        <div class="collection-content">
+          <h3>DISCOVER LUSTROUS HAIR</h3>
+          <h2>BHRINGRAJ COLLECTION</h2>
+          <a href=".//pages/products/bhringraj-head-massage-oil.html" class="collection-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="collection-card">
+        <div class="collection-image">
+          <img src="images/awardsimages/hair-care-japapatti.avif" alt="Japapatti Hair Range">
+        </div>
+        <div class="collection-content">
+          <h3>TRADITION MEETS TRANSFORMATION</h3>
+          <h2>JAPAPATTI HAIR RANGE</h2>
+          <a href=".//pages/products/hair-cleanser-japapatti-brahmi.html" class="collection-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="collection-card">
+        <div class="collection-image">
+          <img src="./images/awardsimages/ritual.avif" alt="Expert-Curated Rituals">
+        </div>
+        <div class="collection-content">
+          <h3>INTRODUCING A SELECTION OF</h3>
+          <h2>EXPERT-CURATED RITUALS</h2>
+          <a href=".//pages/products/morning-ritual-set.html" class="collection-button">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section class="awards-section">
+    <h2>RECENT AWARDS</h2>
+    <div class="awards-slider">
+      <img src="./images/awardsimages/Amazon.avif" alt="Award">
+      <img src="./images/awardsimages/Cosmopolitan.avif" alt="Award">
+      <img src="./images/awardsimages/Elle.avif" alt="Award">
+      <img src="./images/awardsimages/Geo-Spa2.avif" alt="Award">
+      <img src="./images/awardsimages/GQ.avif" alt="Award">
+      <img src="./images/awardsimages/Harper-Bazaar.avif" alt="Award">
+      <img src="./images/awardsimages/Newsweek_Brands_APAC_Logo.avif" alt="Award">
+      <img src="./images/awardsimages/Nykaa.avif" alt="Award">
+      <img src="./images/awardsimages/VBA.avif" alt="Award">
+      <img src="./images/awardsimages/Vogue.avif" alt="Award">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>CUSTOMER SERVICE</h3>
+        <ul>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+          <li><a href="pages/faqs.html">FAQs</a></li>
+          <li><a href="pages/shipping.html">Shipping & Returns</a></li>
+          <li><a href="pages/track-order.html">Track Your Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>INFORMATION</h3>
+        <ul>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/stores.html">Store Locator</a></li>
+          <li><a href="pages/careers.html">Careers</a></li>
+          <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="pages/terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li><a href="pages/facial-care.html">Face</a></li>
+          <li><a href="pages/bath-body.html">Bath & Body</a></li>
+          <li><a href="pages/hair.html">Hair</a></li>
+          <li><a href="pages/makeup.html">Makeup</a></li>
+          <li><a href="pages/gifting.html">Gifting</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/forestessentials/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/forestessential?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/forestessentials/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@Forestessentialsindiaofficial" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/atharva-kalekar-55276a316/" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <div class="newsletter">
+          <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+          <div id="subscription-success" class="subscription-success" style="display: none;">
+            <i class="fas fa-check-circle"></i>
+            <span>Thank you! We'll connect with you through email.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Forest Essentials. All Rights Reserved.</p>
+      <div class="payment-icons">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Chat Button -->
+  <div class="floating-btn">
+    <i class="fas fa-comments"></i>
+    <span class="floating-badge">1</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // Newsletter Form Submission
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get the email input
+      const emailInput = document.getElementById('newsletter-email');
+      const email = emailInput.value.trim();
+      
+      // Simple email validation
+      if (email && email.includes('@') && email.includes('.')) {
+        // Show success message
+        const successMessage = document.getElementById('subscription-success');
+        document.querySelector('.newsletter-form').style.display = 'none';
+        successMessage.style.display = 'flex';
+        
+        // Clear the input
+        emailInput.value = '';
+        
+        // Hide the success message after 5 seconds and show the form again
+        setTimeout(() => {
+          successMessage.style.display = 'none';
+          document.querySelector('.newsletter-form').style.display = 'flex';
+        }, 5000);
+      } else {
+        // Show error message
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+      }
+    });
+  </script>
+  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/mini-cart.js"></script>
+  </body>
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+    function toggleMobileMenu() {
+      mobileNav.classList.toggle('active');
+      mobileMenuOverlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    }
+
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    mobileMenuClose.addEventListener('click', toggleMobileMenu);
+    mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+
+    // Close menu when clicking on a nav link
+    document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Make images lazy load
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('img[data-src]');
+      
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            observer.unobserve(img);
+          }
+        });
+      });
+
+      images.forEach(img => imageObserver.observe(img));
+    });
+  </script>
+</html>

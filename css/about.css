@@ -1,0 +1,490 @@
+/* About Page Specific Styles */
+
+/* Hero Banner */
+.hero-banner {
+  background-image: url('../images/about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5%;
+  position: relative;
+  color: #fff;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', serif;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.welcome-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-content h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', serif;
+  color: #333;
+  line-height: 1.4;
+}
+
+.welcome-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Section Grid Layout */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.section-grid.reverse {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+}
+
+.section-grid.reverse .section-content {
+  direction: ltr;
+}
+
+.section-grid.reverse .section-image {
+  direction: ltr;
+}
+
+.section-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-content {
+  padding: 20px 0;
+}
+
+.section-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.section-content h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-family: 'Times New Roman', serif;
+  color: #333;
+  line-height: 1.3;
+}
+
+.section-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+/* Certifications Section */
+.certifications-section {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.certifications-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-family: 'Times New Roman', serif;
+}
+
+.certifications-section > p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.certifications-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.certification-item {
+  width: 120px;
+}
+
+.certification-item img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.certification-item img:hover {
+  opacity: 1;
+}
+
+.certification-quote {
+  font-style: italic;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Recognition Section */
+.recognition-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.recognition-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', serif;
+}
+
+.awards-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.award-item {
+  width: 120px;
+}
+
+.award-item img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.award-item img:hover {
+  opacity: 1;
+}
+
+.award-winners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.award-winner {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.award-winner:hover {
+  color: #a0001e;
+}
+
+/* Origin Section */
+.origin-section {
+  padding: 0;
+}
+
+.origin-banner {
+  background-image: url('../images/about/our-spiritual-home.avif');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5%;
+  position: relative;
+  color: #fff;
+}
+
+.origin-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.origin-content {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+}
+
+.origin-content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif;
+}
+
+.origin-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Manufacturing Section */
+.manufacturing-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+/* Discover Section */
+.discover-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.discover-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-family: 'Times New Roman', serif;
+}
+
+.discover-section > p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Expertise Section */
+.expertise-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+/* Ayurveda Section */
+.ayurveda-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.ayurveda-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-family: 'Times New Roman', serif;
+}
+
+.ayurveda-section > p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.doshas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dosha-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.dosha-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.dosha-item:hover img {
+  transform: scale(1.05);
+}
+
+.dosha-link {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+.dosha-link:hover {
+  background-color: #a0001e;
+  color: #fff;
+}
+
+/* Button Styles */
+.btn-outline {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 1px solid #333;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .section-grid.reverse {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-banner, .origin-banner {
+    height: 400px;
+  }
+  
+  .hero-content h1, .origin-content h2 {
+    font-size: 36px;
+  }
+  
+  .doshas-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner, .origin-banner {
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .hero-content, .origin-content {
+    max-width: 100%;
+  }
+  
+  .hero-content h1, .origin-content h2 {
+    font-size: 28px;
+  }
+  
+  .section-content h2 {
+    font-size: 24px;
+  }
+  
+  .certifications-grid, .awards-grid {
+    gap: 20px;
+  }
+  
+  .certification-item, .award-item {
+    width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-content h2, .section-content h2 {
+    font-size: 22px;
+  }
+  
+  .hero-content h1, .origin-content h2 {
+    font-size: 24px;
+  }
+  
+  .hero-content p, .origin-content p {
+    font-size: 14px;
+  }
+  
+  .section-content p {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - Forest Essentials India</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/account.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>FREE BESTSELLER ON 1ST ORDER*. CODE:WELCOME</p>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <!-- Top Navigation -->
+    <div class="navbar-top">
+      <div class="navbar-left">
+        <a href="#" class="navbar-link search-icon"><i class="fas fa-search"></i></a>
+        <a href="stores.html" class="navbar-link">Stores</a>
+        <select class="currency-dropdown">
+          <option value="INR">₹ INR</option>
+          <option value="USD">$ USD</option>
+          <option value="GBP">£ GBP</option>
+        </select>
+      </div>
+      <div class="navbar-logo">
+        <a href="../index.html">
+          <img src="..//images/logo.png" alt="Forest Essentials Logo">
+        </a>
+      </div>
+      <div class="navbar-right">
+        <a href="account.html" class="navbar-link">Account</a>
+        <a href="soundarya-club.html" class="navbar-link">Soundarya Club</a>
+        <a href="cart.html" class="navbar-cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <nav class="navbar-bottom">
+      <a href="facial-care.html" class="navbar-link">Face</a>
+      <a href="bath-body.html" class="navbar-link">Bath & Body</a>
+      <a href="hair.html" class="navbar-link">Hair</a>
+      <a href="makeup.html" class="navbar-link">Makeup</a>
+      <a href="gifting.html" class="navbar-link new">Gifting</a>
+      <a href="travel-kits.html" class="navbar-link">Travel Minis</a>
+      <a href="mom-baby.html" class="navbar-link">Mom & Baby</a>
+      <a href="men.html" class="navbar-link">Men</a>
+      <a href="wellness.html" class="navbar-link">Wellness</a>
+      <a href="fragrance.html" class="navbar-link">Fragrance</a>
+      <a href="about.html" class="navbar-link">About Us</a>
+      <a href="exclusives.html" class="navbar-link">Exclusives!</a>
+    </nav>
+  </header>
+
+  <!-- Account Section -->
+  <section class="account-section">
+    <div class="account-container">
+      <div class="account-tabs">
+        <button class="tab-btn active" data-tab="login">Login</button>
+        <button class="tab-btn" data-tab="register">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <div class="tab-content active" id="login">
+        <div class="form-container">
+          <h2>Login to Your Account</h2>
+          <form class="login-form" id="loginForm">
+            <div class="form-group">
+              <label for="login-email">Email Address*</label>
+              <input type="email" id="login-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password*</label>
+              <div class="password-input">
+                <input type="password" id="login-password" name="password" required>
+                <button type="button" class="toggle-password">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" name="remember">
+                <span>Remember me</span>
+              </label>
+              <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+          <div class="social-login">
+            <p>Or login with</p>
+            <div class="social-buttons">
+              <button class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+              </button>
+              <button class="social-btn google">
+                <i class="fab fa-google"></i>
+                Google
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Form -->
+      <div class="tab-content" id="register">
+        <div class="form-container">
+          <h2>Create an Account</h2>
+          <form class="register-form" id="registerForm">
+            <div class="form-group">
+              <label for="register-firstname">First Name*</label>
+              <input type="text" id="register-firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+              <label for="register-lastname">Last Name*</label>
+              <input type="text" id="register-lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+              <label for="register-email">Email Address*</label>
+              <input type="email" id="register-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="register-password">Password*</label>
+              <div class="password-input">
+                <input type="password" id="register-password" name="password" required>
+                <button type="button" class="toggle-password">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+              <div class="password-requirements">
+                <p>Password must contain:</p>
+                <ul>
+                  <li>At least 8 characters</li>
+                  <li>One uppercase letter</li>
+                  <li>One lowercase letter</li>
+                  <li>One number</li>
+                  <li>One special character</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="register-confirm-password">Confirm Password*</label>
+              <div class="password-input">
+                <input type="password" id="register-confirm-password" name="confirm-password" required>
+                <button type="button" class="toggle-password">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="form-options">
+              <label class="terms-checkbox">
+                <input type="checkbox" name="terms" required>
+                <span>I agree to the <a href="terms.html">Terms & Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a></span>
+              </label>
+            </div>
+            <button type="submit" class="submit-btn">Create Account</button>
+          </form>
+          <div class="social-login">
+            <p>Or register with</p>
+            <div class="social-buttons">
+              <button class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+              </button>
+              <button class="social-btn google">
+                <i class="fab fa-google"></i>
+                Google
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>CUSTOMER SERVICE</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="shipping.html">Shipping & Returns</a></li>
+          <li><a href="track-order.html">Track Your Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>INFORMATION</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="stores.html">Store Locator</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li><a href="facial-care.html">Face</a></li>
+          <li><a href="bath-body.html">Bath & Body</a></li>
+          <li><a href="hair.html">Hair</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+          <li><a href="gifting.html">Gifting</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/forestessentials/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/forestessential?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/forestessentials/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@Forestessentialsindiaofficial" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/atharva-kalekar-55276a316/" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <div class="newsletter">
+          <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Forest Essentials. All Rights Reserved.</p>
+      <div class="payment-icons">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/account.js"></script>
+</body>
+</html> 
