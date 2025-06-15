@@ -1,6 +1,6 @@
 // Cart functionality
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Cart script loaded');
+  console.log('Main cart script loaded');
   
   // Initialize cart from localStorage or create empty cart
   let cart;
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedCart = localStorage.getItem('cart');
     console.log('Loaded cart from localStorage:', savedCart);
     cart = savedCart ? JSON.parse(savedCart) : {};
+    console.log('Parsed cart:', cart);
   } catch (e) {
     console.error('Error loading cart from localStorage:', e);
     cart = {};
@@ -16,8 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Function to save cart to localStorage
   function saveCart() {
     try {
-      localStorage.setItem('cart', JSON.stringify(cart));
-      console.log('Cart saved to localStorage:', cart);
+      const cartString = JSON.stringify(cart);
+      console.log('Saving cart to localStorage:', cartString);
+      localStorage.setItem('cart', cartString);
+      console.log('Cart saved successfully');
     } catch (e) {
       console.error('Error saving cart to localStorage:', e);
     }
@@ -27,15 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateCartCount() {
     const cartCount = document.querySelector('.cart-count');
     if (cartCount) {
-      const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
+      const totalItems = Object.values(cart).reduce((sum, item) => sum + (parseInt(item.quantity) || 0), 0);
       cartCount.textContent = totalItems;
       console.log('Updated cart count:', totalItems);
+    } else {
+      console.log('Cart count element not found');
     }
   }
   
   // Function to add item to cart
   function addToCart(productCard, button) {
     console.log('Adding item to cart...');
+    console.log('Product card:', productCard);
+    console.log('Button:', button);
     
     // Get or generate product ID
     const productId = productCard.dataset.productId || 'prod_' + Math.random().toString(36).substr(2, 9);
@@ -104,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // If on cart page, update the cart display
     if (document.querySelector('.cart-page')) {
+      console.log('Cart page detected, updating display...');
       updateCartDisplay();
     }
   }
@@ -145,8 +153,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     Object.entries(cart).forEach(([id, item]) => {
       console.log('Adding item to cart display:', item);
-      totalItems += item.quantity;
-      const itemTotal = item.price * item.quantity;
+      totalItems += parseInt(item.quantity) || 0;
+      const itemTotal = item.price * (parseInt(item.quantity) || 0);
       subtotal += itemTotal;
       
       const itemElement = document.createElement('div');
@@ -192,99 +200,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalElement = document.querySelector('.total-amount');
     
     if (subtotalElement && totalElement) {
-      const subtotal = Object.values(cart).reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      const subtotal = Object.values(cart).reduce((sum, item) => sum + (item.price * (parseInt(item.quantity) || 0)), 0);
       subtotalElement.textContent = `₹${subtotal.toLocaleString('en-IN')}.00`;
       totalElement.textContent = `₹${subtotal.toLocaleString('en-IN')}.00`;
-    }
-  }
-  
-  // Function to set up event listeners for cart interactions
-  function setupCartEventListeners() {
-    // Handle quantity increase
-    document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const input = this.parentElement.querySelector('.quantity-input');
-        const currentValue = parseInt(input.value) || 1;
-        if (currentValue < 10) {
-          input.value = currentValue + 1;
-          updateCartItem(this.closest('.cart-item'), parseInt(input.value));
-        }
-      });
-    });
-
-    // Handle quantity decrease
-    document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const input = this.parentElement.querySelector('.quantity-input');
-        const currentValue = parseInt(input.value) || 1;
-        if (currentValue > 1) {
-          input.value = currentValue - 1;
-          updateCartItem(this.closest('.cart-item'), parseInt(input.value));
-        }
-      });
-    });
-
-    // Handle manual input
-    document.querySelectorAll('.quantity-input').forEach(input => {
-      input.addEventListener('change', function() {
-        let value = parseInt(this.value) || 1;
-        if (value < 1) value = 1;
-        if (value > 10) value = 10;
-        this.value = value;
-        updateCartItem(this.closest('.cart-item'), value);
-      });
-    });
-
-    // Handle remove item
-    document.querySelectorAll('.remove-item').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const itemElement = this.closest('.cart-item');
-        const productId = itemElement.dataset.productId;
-        
-        // Remove from cart
-        if (cart[productId]) {
-          delete cart[productId];
-          saveCart();
-          updateCartCount();
-          
-          // Remove from DOM
-          itemElement.remove();
-          
-          // If cart is now empty, show empty message
-          if (Object.keys(cart).length === 0) {
-            updateCartDisplay();
-          } else {
-            updateCartTotals();
-          }
-          
-          showNotification('Item removed from cart');
-        }
-      });
-    });
-  }
-  
-  // Function to update a cart item's quantity
-  function updateCartItem(itemElement, newQuantity) {
-    const productId = itemElement.dataset.productId;
-    if (cart[productId]) {
-      cart[productId].quantity = newQuantity;
-      saveCart();
-      updateCartCount();
-      updateCartTotals();
-      
-      // Update the item total
-      const itemTotalElement = itemElement.querySelector('.cart-item-total');
-      if (itemTotalElement) {
-        const price = cart[productId].price;
-        itemTotalElement.textContent = `₹${(price * newQuantity).toLocaleString('en-IN')}.00`;
-      }
-      
-      // Update cart title with new item count
-      const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
-      const cartTitle = document.querySelector('.cart-title');
-      if (cartTitle) {
-        cartTitle.textContent = `Your Shopping Bag (${totalItems} ${totalItems === 1 ? 'Item' : 'Items'})`;
-      }
+      console.log('Updated cart totals:', { subtotal });
+    } else {
+      console.log('Cart total elements not found');
     }
   }
   
@@ -298,6 +219,59 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
       notification.remove();
     }, 3000);
+  }
+  
+  // Function to set up event listeners for cart items
+  function setupCartEventListeners() {
+    console.log('Setting up cart event listeners...');
+    
+    // Quantity controls
+    document.querySelectorAll('.quantity-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const input = this.parentElement.querySelector('.quantity-input');
+        const itemElement = this.closest('.cart-item');
+        const productId = itemElement.dataset.productId;
+        let value = parseInt(input.value) || 1;
+        
+        if (this.classList.contains('minus') && value > 1) {
+          value--;
+        } else if (this.classList.contains('plus') && value < 10) {
+          value++;
+        }
+        
+        input.value = value;
+        cart[productId].quantity = value;
+        saveCart();
+        updateCartDisplay();
+        updateCartCount();
+      });
+    });
+    
+    // Remove item buttons
+    document.querySelectorAll('.remove-item').forEach(button => {
+      button.addEventListener('click', function() {
+        const itemElement = this.closest('.cart-item');
+        const productId = itemElement.dataset.productId;
+        removeFromCart(productId);
+      });
+    });
+  }
+  
+  // Function to remove item from cart
+  function removeFromCart(productId) {
+    if (cart[productId]) {
+      delete cart[productId];
+      saveCart();
+      updateCartCount();
+      
+      // Show notification
+      showNotification('Item removed from cart');
+      
+      // If on cart page, update the cart display
+      if (document.querySelector('.cart-page')) {
+        updateCartDisplay();
+      }
+    }
   }
   
   // Set up event delegation for all 'Add to Cart' buttons
@@ -323,5 +297,4 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Cart page detected, updating display...');
     updateCartDisplay();
   }
-});
-
+}); 

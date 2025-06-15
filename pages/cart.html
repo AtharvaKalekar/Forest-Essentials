@@ -96,7 +96,7 @@
     }
   </style>
 </head>
-<body>
+<body class="cart-page">
   <!-- Top Announcement Bar -->
   <div class="announcement-bar">
     <p>FREE BESTSELLER ON 1ST ORDER*. CODE:WELCOME</p>
@@ -117,7 +117,7 @@
       </div>
       <div class="navbar-logo">
         <a href="../index.html">
-          <img src="..//images/logo.png" alt="Forest Essentials Logo">
+          <img src="../images/logo.png" alt="Forest Essentials Logo">
         </a>
       </div>
       <div class="navbar-right">
@@ -159,70 +159,35 @@
   <!-- Cart Section -->
   <section class="cart-section">
     <div class="cart-container">
-    <h1 class="cart-title">Your Shopping Bag (0 Items)</h1>
-    
-    <div class="cart-content">
-      <div class="cart-items">
-        <!-- Cart items will be dynamically inserted here -->
-        <div class="empty-cart-message">
-          <i class="fas fa-shopping-cart"></i>
-          <h3>Your cart is empty</h3>
-          <p>Looks like you haven't added anything to your cart yet.</p>
-          <a href="../index.html" class="btn btn-primary">Continue Shopping</a>
-        </div>
-      </div>
+      <h1 class="cart-title">Your Shopping Bag (0 Items)</h1>
       
-      <div class="cart-summary">
-        <h3>Order Summary</h3>
-        <div class="summary-row">
-          <span>Subtotal</span>
-          <span class="subtotal-amount">₹0.00</span>
+      <div class="cart-content">
+        <div class="cart-items">
+          <!-- Cart items will be dynamically inserted here -->
+          <div class="empty-cart-message">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Your cart is empty</h3>
+            <p>Looks like you haven't added anything to your cart yet.</p>
+            <a href="../index.html" class="btn btn-primary">Continue Shopping</a>
+          </div>
         </div>
-        <div class="summary-row">
-          <span>Shipping</span>
-          <span class="shipping-amount">Calculated at checkout</span>
-        </div>
-        <div class="summary-row total">
-          <span>Total</span>
-          <span class="total-amount">₹0.00</span>
-        </div>
-        <button class="checkout-btn btn-primary">Proceed to Checkout</button>
-        <p class="shipping-note">Free shipping on all orders over ₹2,500</p>
-      </div>
-    </div>
-          
-          
         
-        <!-- Cart Summary -->
         <div class="cart-summary">
-          <h2>Order Summary</h2>
-          
+          <h3>Order Summary</h3>
           <div class="summary-row">
             <span>Subtotal</span>
-            <span>₹10,070.00</span>
+            <span class="subtotal-amount">₹0.00</span>
           </div>
-          
           <div class="summary-row">
             <span>Shipping</span>
-            <span>Free</span>
+            <span class="shipping-amount">Calculated at checkout</span>
           </div>
-          
-          <div class="summary-row">
-            <span>Tax</span>
-            <span>Included</span>
-          </div>
-          
           <div class="summary-row total">
             <span>Total</span>
-            <span>₹10,070.00</span>
+            <span class="total-amount">₹0.00</span>
           </div>
-          
-          <div class="promo-code">
-            <input type="text" placeholder="Enter promo code">
-            <button>Apply</button>
-          </div>
-          
-          <button class="checkout-btn">Proceed to Checkout</button>
+          <button class="checkout-btn btn-primary">Proceed to Checkout</button>
+          <p class="shipping-note">Free shipping on all orders over ₹2,500</p>
           
           <div class="payment-methods">
             <p>We Accept:</p>
@@ -240,102 +205,8 @@
           </div>
         </div>
       </div>
-      
-      <!-- Continue Shopping -->
-      <div class="continue-shopping">
-        <a href="../index.html" class="continue-btn">
-          <i class="fas fa-arrow-left"></i>
-          Continue Shopping
-        </a>
-      </div>
     </div>
   </section>
-
-  <!-- You May Also Like Section -->
-  <section class="related-products">
-    <h2>You May Also Like</h2>
-    <div class="related-products-grid">
-      <!-- Product 1 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../images/product-day-cream.jpg" alt="Soundarya Day Cream 24K Gold & SPF 25">
-          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-        </div>
-        <h3 class="product-name">Soundarya Day Cream 24K Gold, SPF 30|PA++</h3>
-        <p class="product-description">Age-Defying & Illuminating</p>
-        <div class="product-variants">2 Sizes Available</div>
-        <div class="product-price">₹6,850.00</div>
-        <div class="product-rating">
-          <span class="stars">★★★★☆</span>
-          <span class="review-count">451 Reviews</span>
-        </div>
-        <button class="product-button">Select Size</button>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="product-card">
-        <div class="product-badge trending">Trending Now</div>
-        <div class="product-image">
-          <img src="../images/product-hair-serum.jpg" alt="Advanced Hair Growth Serum">
-          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-        </div>
-        <h3 class="product-name">Advanced Hair Growth Serum</h3>
-        <p class="product-description">Root treatment to Reactivate Hair Growth</p>
-        <div class="product-variants">50 ml</div>
-        <div class="product-price">₹3,150.00</div>
-        <div class="product-rating">
-          <span class="stars">★★★★☆</span>
-          <span class="review-count">116 Reviews</span>
-        </div>
-        <button class="product-button">Add to Bag</button>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../images/product-essentials-for-him.jpg" alt="Essentials For Him">
-          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-        </div>
-        <h3 class="product-name">Essentials For Him</h3>
-        <p class="product-description">Miniature Grooming Essentials</p>
-        <div class="product-price">₹2,220.00</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="review-count">22 Reviews</span>
-        </div>
-        <button class="product-button">Add to Bag</button>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../images/product-rose-oil.jpg" alt="After Bath Oil Indian Rose Absolute">
-          <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-        </div>
-        <h3 class="product-name">After Bath Oil Indian Rose Absolute</h3>
-        <p class="product-description">Scented Moisture Sealer</p>
-        <div class="product-variants">2 Sizes Available</div>
-        <div class="product-price">₹1,850.00</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="review-count">48 Reviews</span>
-        </div>
-        <button class="product-button">Select Size</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Empty Cart Template (Hidden by default) -->
-  <div class="empty-cart" style="display: none;">
-    <div class="empty-cart-container">
-      <div class="empty-cart-icon">
-        <i class="fas fa-shopping-bag"></i>
-      </div>
-      <h2>Your Shopping Bag is Empty</h2>
-      <p>Looks like you haven't added any items to your bag yet.</p>
-      <a href="../index.html" class="btn-primary">Start Shopping</a>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer>
@@ -407,26 +278,7 @@
   <!-- Back to Top Button -->
   <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 
-  <script src="../js/script.js"></script>
+  <script src="../js/main-cart.js"></script>
   <script src="../js/cart.js"></script>
-  <script>
-    // Initialize cart functionality when the page loads
-    document.addEventListener('DOMContentLoaded', function() {
-      // Update cart display
-      if (typeof updateCartDisplay === 'function') {
-        updateCartDisplay();
-      }
-      
-      // Set up cart event listeners
-      if (typeof setupCartEventListeners === 'function') {
-        setupCartEventListeners();
-      }
-      
-      // Update cart totals
-      if (typeof updateCartTotals === 'function') {
-        updateCartTotals();
-      }
-    });
-  </script>
 </body>
 </html>

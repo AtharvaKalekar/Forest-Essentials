@@ -2124,3 +2124,12 @@ footer {
   }
 }
 
+/* Add to Cart Button for Product Pages */
+.product-actions .add-to-cart {
+  position: static;
+  opacity: 1;
+  width: auto;
+  min-width: 200px;
+  margin-right: 10px;
+}
+

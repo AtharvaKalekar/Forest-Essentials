@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
   <!-- Top Announcement Bar -->
@@ -75,7 +76,12 @@
 
   <!-- Product Section -->
   <section class="product-section">
-    <div class="product-container">
+    <div class="product-container" 
+         data-product-id="15591" 
+         data-product-name="Transformative Soundarya Night Cream" 
+         data-product-price="8695"
+         data-product-image="../images/product/15591_transformative_soundarya_night_cream_with_24k_gold_45g_1.avif"
+         data-product-url="product.html">
       <!-- Product Gallery -->
       <div class="product-gallery">
         <div class="gallery-main">
@@ -154,7 +160,15 @@
         </div>
         
         <div class="product-actions">
-          <button class="add-to-cart-btn">Add to Bag</button>
+          <button class="add-to-cart" 
+                  data-product-id="15591" 
+                  data-product-name="Transformative Soundarya Night Cream" 
+                  data-product-price="8695"
+                  data-product-image="../images/product/15591_transformative_soundarya_night_cream_with_24k_gold_45g_1.avif"
+                  data-product-url="product.html">
+            <i class="fas fa-shopping-bag"></i>
+            Add to Bag
+          </button>
           <button class="wishlist-btn"><i class="far fa-heart"></i></button>
         </div>
         
@@ -562,6 +576,8 @@
   <script src="../js/script.js"></script>
   <script src="../js/product.js"></script>
   <script src="../js/product-zoom.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/main-cart.js"></script>
 </body>
 </html>
 
