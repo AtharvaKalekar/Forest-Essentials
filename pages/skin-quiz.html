@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Type & Dosha Quiz | Forest Essentials</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/skin-quiz.css">
+</head>
+<body>
+  <!-- Header (Same as index.html) -->
+  <div class="announcement-bar">
+    <p>FREE BESTSELLER ON 1ST ORDER*. CODE:WELCOME</p>
+  </div>
+
+  <!-- Mobile Navigation (Same as index.html) -->
+  <div class="overlay" id="mobileMenuOverlay"></div>
+  
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <h3>Menu</h3>
+      <button class="mobile-menu-close" id="mobileMenuClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="facial-care.html">Face</a></li>
+      <li><a href="bath-body.html">Bath & Body</a></li>
+      <li><a href="hair.html">Hair</a></li>
+      <li><a href="makeup.html">Makeup</a></li>
+      <li><a href="fragrance.html">Fragrance</a></li>
+      <li><a href="men.html">Men</a></li>
+      <li><a href="mom-baby.html">Mom & Baby</a></li>
+      <li><a href="wellness.html">Wellness</a></li>
+      <li><a href="gifting.html">Gifting</a></li>
+      <li><a href="travel-kits.html">Travel Kits</a></li>
+      <li><a href="exclusives.html">Exclusives</a></li>
+    </ul>
+  </nav>
+
+  <!-- Navigation -->
+  <header>
+    <div class="navbar-top">
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navbar-left">
+        <a href="#" class="navbar-link search-icon"><i class="fas fa-search"></i></a>
+        <a href="stores.html" class="navbar-link">Stores</a>
+        <select class="currency-dropdown">
+          <option value="INR">₹ INR</option>
+          <option value="USD">$ USD</option>
+          <option value="GBP">£ GBP</option>
+        </select>
+      </div>
+      <div class="navbar-logo">
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="Forest Essentials Logo">
+        </a>
+      </div>
+      <div class="navbar-right">
+        <a href="account.html" class="navbar-link">Account</a>
+        <a href="soundarya-club.html" class="navbar-link">Soundarya Club</a>
+        <a href="cart.html" class="cart-icon header-cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quiz Container -->
+  <main class="quiz-container">
+    <div class="quiz-header">
+      <h1>Find Your Perfect Skincare Match</h1>
+      <p>Take our quick quiz to discover your skin type and dosha, and get personalized product recommendations.</p>
+    </div>
+
+    <div class="quiz-progress">
+      <div class="progress-bar">
+        <div class="progress" id="quizProgress"></div>
+      </div>
+      <span class="progress-text"><span id="currentQuestion">1</span>/5</span>
+    </div>
+
+    <form id="skinQuizForm">
+      <!-- Question 1 -->
+      <div class="question active" id="question1">
+        <h3>How does your skin feel after cleansing?</h3>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="q1" value="dry">
+            <span>Feels tight and dry</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q1" value="oily">
+            <span>Gets shiny quickly</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q1" value="combination">
+            <span>Oily in T-zone, dry elsewhere</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q1" value="normal">
+            <span>Feels balanced and comfortable</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question" id="question2">
+        <h3>How would you describe your skin texture?</h3>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="q2" value="dry">
+            <span>Rough, flaky or thin</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q2" value="oily">
+            <span>Thick, oily, or prone to breakouts</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q2" value="combination">
+            <span>Oily in some areas, dry in others</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q2" value="normal">
+            <span>Smooth with few imperfections</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question" id="question3">
+        <h3>How does your skin react to stress?</h3>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="q3" value="vata">
+            <span>Gets dry, flaky, or develops fine lines</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q3" value="pitta">
+            <span>Becomes red, inflamed, or breaks out</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q3" value="kapha">
+            <span>Gets congested or develops blackheads</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question" id="question4">
+        <h3>What best describes your energy levels?</h3>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="q4" value="vata">
+            <span>Variable energy, sometimes anxious</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q4" value="pitta">
+            <span>Intense, focused, can be irritable</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q4" value="kapha">
+            <span>Steady, calm, sometimes sluggish</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question" id="question5">
+        <h3>What's your main skin concern?</h3>
+        <div class="options">
+          <label class="option">
+            <input type="radio" name="q5" value="dry">
+            <span>Dryness and fine lines</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q5" value="oily">
+            <span>Excess oil and breakouts</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q5" value="sensitive">
+            <span>Redness and sensitivity</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="q5" value="aging">
+            <span>Signs of aging</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="quiz-navigation">
+        <button type="button" class="btn btn-secondary" id="prevBtn" disabled>Previous</button>
+        <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+        <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">See Results</button>
+      </div>
+    </form>
+
+    <!-- Results Section (initially hidden) -->
+    <div id="quizResults" class="quiz-results" style="display: none;">
+      <h2>Your Skin Profile</h2>
+      <div id="skinTypeResult" class="result-card">
+        <h3>Skin Type: <span id="skinType"></span></h3>
+        <p id="skinTypeDesc"></p>
+      </div>
+      <div id="doshaResult" class="result-card">
+        <h3>Dosha: <span id="doshaType"></span></h3>
+        <p id="doshaDesc"></p>
+      </div>
+      
+      <div class="recommendations">
+        <h3>Recommended Products</h3>
+        <div class="products-grid" id="recommendedProducts">
+          <!-- Products will be dynamically inserted here -->
+        </div>
+      </div>
+      
+      <div class="quiz-actions">
+        <button id="retakeQuiz" class="btn btn-secondary">Retake Quiz</button>
+        <a href="facial-care.html" class="btn btn-primary">Shop All Skincare</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (Same as index.html) -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>CUSTOMER SERVICE</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="stores.html">Store Locator</a></li>
+          <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="ayurveda.html">Ayurveda</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>LEGAL</h3>
+        <ul>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="newsletter">
+          <h4>JOIN OUR NEWSLETTER</h4>
+          <p>Get 10% off your first order</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Forest Essentials. All Rights Reserved.</p>
+      <div class="payment-methods">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/skin-quiz.js"></script>
+  <script>
+    // Mobile menu functionality
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileNav = document.getElementById('mobileNav');
+
+    function toggleMobileMenu() {
+      mobileNav.classList.toggle('active');
+      mobileMenuOverlay.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    }
+
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    mobileMenuClose.addEventListener('click', toggleMobileMenu);
+    mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+  </script>
+</body>
+</html>

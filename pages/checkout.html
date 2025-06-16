@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Forest Essentials India</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>FREE BESTSELLER ON 1ST ORDER*. CODE:WELCOME</p>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <!-- Top Navigation -->
+    <div class="navbar-top">
+      <div class="navbar-left">
+        <a href="#" class="navbar-link search-icon"><i class="fas fa-search"></i></a>
+        <a href="stores.html" class="navbar-link">Stores</a>
+        <select class="currency-dropdown">
+          <option value="INR">₹ INR</option>
+          <option value="USD">$ USD</option>
+          <option value="GBP">£ GBP</option>
+        </select>
+      </div>
+      <div class="navbar-logo">
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="Forest Essentials Logo">
+        </a>
+      </div>
+      <div class="navbar-right">
+        <a href="account.html" class="navbar-link">Account</a>
+        <a href="soundarya-club.html" class="navbar-link">Soundarya Club</a>
+        <a href="cart.html" class="navbar-cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <nav class="navbar-bottom">
+      <a href="facial-care.html" class="navbar-link">Face</a>
+      <a href="bath-body.html" class="navbar-link">Bath & Body</a>
+      <a href="hair.html" class="navbar-link">Hair</a>
+      <a href="makeup.html" class="navbar-link">Makeup</a>
+      <a href="gifting.html" class="navbar-link new">Gifting</a>
+      <a href="travel-kits.html" class="navbar-link">Travel Minis</a>
+      <a href="mom-baby.html" class="navbar-link">Mom & Baby</a>
+      <a href="men.html" class="navbar-link">Men</a>
+      <a href="wellness.html" class="navbar-link">Wellness</a>
+      <a href="fragrance.html" class="navbar-link">Fragrance</a>
+      <a href="about.html" class="navbar-link">About Us</a>
+      <a href="exclusives.html" class="navbar-link">Exclusives!</a>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-container">
+      <a href="../index.html">Home</a>
+      <span>/</span>
+      <a href="cart.html">Shopping Bag</a>
+      <span>/</span>
+      <span class="current">Checkout</span>
+    </div>
+  </div>
+
+  <!-- Checkout Section -->
+  <section class="checkout-section">
+    <div class="checkout-container">
+      <div class="checkout-content">
+        <!-- Left Column - Shipping & Payment Forms -->
+        <div class="checkout-forms">
+          <!-- Shipping Information -->
+          <div class="form-section">
+            <h2>Shipping Information</h2>
+            <form id="shipping-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name*</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name*</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address*</label>
+                <input type="text" id="address" name="address" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City*</label>
+                  <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                  <label for="state">State*</label>
+                  <input type="text" id="state" name="state" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pincode">PIN Code*</label>
+                <input type="text" id="pincode" name="pincode" required>
+              </div>
+            </form>
+          </div>
+
+          <!-- Payment Information -->
+          <div class="form-section">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+              <div class="form-group">
+                <label for="cardNumber">Card Number*</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiryDate">Expiry Date*</label>
+                  <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                  <label for="cvv">CVV*</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cardName">Name on Card*</label>
+                <input type="text" id="cardName" name="cardName" required>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column - Order Summary -->
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-items">
+            <!-- Items will be dynamically inserted here -->
+          </div>
+          <div class="summary-totals">
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span class="subtotal-amount">₹0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span class="shipping-amount">Calculated at checkout</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span class="total-amount">₹0.00</span>
+            </div>
+          </div>
+          <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+          <div class="secure-checkout">
+            <i class="fas fa-lock"></i>
+            <span>Secure Checkout</span>
+          </div>
+          <div class="payment-methods">
+            <p>We Accept:</p>
+            <div class="payment-icons">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-paypal"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>CUSTOMER SERVICE</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="shipping.html">Shipping & Returns</a></li>
+          <li><a href="track-order.html">Track Your Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>INFORMATION</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="stores.html">Store Locator</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li><a href="facial-care.html">Face</a></li>
+          <li><a href="bath-body.html">Bath & Body</a></li>
+          <li><a href="hair.html">Hair</a></li>
+          <li><a href="makeup.html">Makeup</a></li>
+          <li><a href="gifting.html">Gifting</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CONNECT WITH US</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/forestessentials/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/forestessential?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/forestessentials/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@Forestessentialsindiaofficial" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/atharva-kalekar-55276a316/" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Forest Essentials. All Rights Reserved.</p>
+      <div class="payment-icons">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Chat Button -->
+  <div class="floating-btn">
+    <i class="fas fa-comments"></i>
+    <span class="floating-badge">1</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="../js/checkout.js"></script>
+</body>
+</html> 
